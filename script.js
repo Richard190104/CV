@@ -110,8 +110,24 @@ function createProjectsList(projects) {
         item.classList.add("clickable")
         list.appendChild(item);
     });
+    const github = document.createElement("div");
+    github.classList.add("github-link");
+
+    const linkLabel = document.createElement("span");
+    linkLabel.textContent = "Link na GitHub: ";
+
+    const link = document.createElement("a");
+    link.href = "https://github.com/Richard190104?tab=repositories";
+    link.textContent = "https://github.com/Richard190104";
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+
+    github.appendChild(linkLabel);
+    github.appendChild(link);
+    
 
     container.appendChild(list);
+   container.appendChild(github);
     return container;
 }
 
@@ -362,21 +378,21 @@ clickableObjects.forEach((obj, index) => {
     console.error('Error loading data:', error);
 });
 
-
 window.addEventListener('DOMContentLoaded', () => {
     const popup = document.createElement('div');
-    popup.className = 'popup-info';
+    popup.className = 'popup-info animate-popup-in';
     popup.innerHTML = `
         <span class="popup-close">&times;</span>
-        <p>👋 Niektoré prvky na tejto stránke sú <b>interaktívne</b>. Skús na ne kliknúť alebo prejsť myšou – napríklad na karty alebo zoznamy!</p>    `;
+        <p>👋 Niektoré prvky na tejto stránke sú <b>interaktívne</b>. Skús na ne kliknúť alebo prejsť myšou – napríklad na karty alebo zoznamy!</p>`;
 
     document.body.appendChild(popup);
+
     popup.querySelector('.popup-close').addEventListener('click', () => {
         popup.remove();
     });
-
-
 });
+
+
 
 window.addEventListener('load', () => {
 fetch('https://nodejs-serverless-function-express-wheat-kappa-81.vercel.app/api/hello')
