@@ -282,7 +282,7 @@ header h2 {
 
 .project-item {
     border-radius: 4px;
-    width: 60%;
+    width: calc(100% - 8px);
     padding: 4px;
     font-weight: 100;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
@@ -362,28 +362,59 @@ header h2 {
 
 .popup-info {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background-color: #f9fafb;
-    color: #1f2937;
-    padding: 16px 20px;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-    font-size: 0.95em;
-    z-index: 9999;
-    animation: fadeInUp 0.4s ease;
-    max-width: 280px;
+    z-index: 1000;
+    max-width: 300px;
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    font-size: 15px;
+    opacity: 0;
+    pointer-events: auto;
+}
+ 
+.animate-popup-in {
+    animation: slideFromCenter 1s ease-out forwards;
 }
 
-.popup-info .popup-close {
+@keyframes slideFromCenter {
+    0%{
+        
+        transform: translate(calc(0vw), calc(50vh))  scale(1);
+        opacity: 1;
+    }
+    20%{
+      
+        transform: translate(calc(0vw), calc(50vh)) scale(1.2);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(calc(0vw), calc(50vh)) scale(1.2);
+        opacity: 1;
+    }
+    70%{
+        transform: translate(calc(0vw), calc(50vh)) scale(1.0);
+        opacity: 1;
+    }
+    80% {
+        transform: translate(calc(0vw), calc(50vh));
+        opacity: 1;
+    }
+    100% {
+        transform: translate(calc(-50vw + 65%), calc(0vh));
+        opacity: 1;
+    }
+}
+
+.popup-close {
     position: absolute;
     top: 8px;
     right: 12px;
-    font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     cursor: pointer;
-    color: #6b7280;
 }
+
+
 
 .popup-info .popup-close:hover {
     color: #ef4444;
@@ -419,6 +450,30 @@ header h2 {
     margin: 0;
     font-weight: 600;
     font-size: 1em;
+}
+
+.github-link {
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #333;
+    margin-top: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    word-break: break-word;
+}
+
+.github-link:hover {
+    background-color: #eaeaea;
+}
+
+.github-link a {
+    color: #0366d6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.github-link a:hover {
+    text-decoration: underline;
 }
 
 
