@@ -395,11 +395,23 @@ window.addEventListener('DOMContentLoaded', () => {
         popup.remove();
     });
 });
-
 window.pageLoadTime = Date.now();
 
+function sendVisitStart() {
+  fetch('https://nodejs-serverless-function-express-wheat-kappa-81.vercel.app/api/visit-start', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      startTime: new Date().toISOString(),
+      userAgent: navigator.userAgent,
+      referrer: document.referrer,
+      path: window.location.pathname
+    }),
+    keepalive: true,
+  });
+}
+
 function sendUserActivity() {
-    console.log(pageInteractionHistory)
     const data = {
         duration: Date.now() - window.pageLoadTime,
         clicks: pageInteractionHistory
@@ -409,9 +421,10 @@ function sendUserActivity() {
     pageInteractionHistory = []
 }
 
-// odošli údaje keď tab odíde
+window.addEventListener('DOMContentLoaded', sendVisitStart);
+
 window.addEventListener('visibilitychange', () => {
-    if (document.visibilityState === 'hidden') {
-        sendUserActivity();
-    }
+  if (document.visibilityState === 'hidden') {
+    sendUserActivity();
+  }
 });
