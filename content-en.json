@@ -83,7 +83,7 @@
     {
       "name": "Task Tracking App",
       "description": "A school project built in the 2nd year with a classmate. It features team/project/task creation and assignment. The app is in React Native, with a Python backend and local PostgreSQL database. It includes: team chat, offline mode, Firebase Crashlytics, accessibility, permissions, and push notifications.",
-      "github": "GitHub: frontend – https://github.com/Richard190104/MyApp, backend – https://github.com/Richard190104/skuska-MTAA"
+      "github": "GitHub: frontend – https://github.com/Richard190104/MyApp backend – https://github.com/Richard190104/skuska-MTAA"
     },
     {
       "name": "Monopoly Game",
