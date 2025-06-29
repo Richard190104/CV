@@ -1,0 +1,126 @@
+{
+    "name": "Richard Pukáč",
+    "title": "Študent FIIT STU v Bratislave",
+    "contact": {
+        "email": "pukacrichard1@gmail.com",
+        "phone": "+421 907 545 190",
+        "address": "Vydraň 9, 06801 Medzilaborce",
+        "github": "link"
+    },
+    "Aboutme": "Som študent informatiky na <b>Fakulte informatiky a informačných technológií STU</b> v Bratislave. <br><br> Programovaniu sa venujem už niekoľko rokov – svoje zručnosti som rozvíjal najmä prostredníctvom vlastných projektov, ktoré mi umožnili prakticky aplikovať získané vedomosti. <br><br>Aktívne si hľadám brigádu, ktorá by mi umožnila ďalej sa odborne posúvať a zároveň prispieť k vývoju zmysluplných riešení. Nemám preferenciu pre konkrétnu pracovnú pozíciu – zaujíma ma akákoľvek činnosť súvisiaca s <b>vývojom softvéru</b>. Rýchlo sa učím nové technológie a mám veľkú motiváciu rozširovať svoje znalosti.",
+    "skills": [
+        {"HTML/CSS": 3.5},
+        {"JavaScript": 3},
+        {"Python": 3.5},
+        {"Java": 1.5},
+        {"C": 3},
+        {"SQL": 3.5},
+        {"React": 2},
+        {"React native": 2},
+        {"Node.js": 2}        
+
+    ],
+    "education": [
+        {
+            "institution": "Gymnázium Medzilaborce",
+            "startDate": "2019-09",
+            "endDate": "2021-01",
+            "location": "Medzilaborce",
+            "description": "Po skončení základnej školy som sa rozhodol pre gymnázium. Práve tam ma zaujalo programovanie a informatika. Začal som sa učiť základy jazyka C#, a postupne som sa stretával s ďalšími."
+        },
+                {
+            "institution": "Gymnázium Pavla Horova",
+            "startDate": "2021-02",
+            "endDate": "2023-06",
+            "location": "Michalovce",
+            "description": "Kvôli <b>programovaniu</b> som sa rozhodol v <b>druhom ročníku</b> prestúpiť na <b>gymnázium do Michaloviec</b>, ktoré ponúkalo <b>lepšie možnosti</b> ako sa rozvíjať v tejto oblasti. Nastúpil som do <b>triedy s informatickým zameraním</b>, a začal som sa v tejto oblasti učiť <b>nové veci</b>. Počas štúdia som sa zúčastnil <b>niekoľkých súťaží</b> (napr. <b>Zenit</b>) zameraných na oblasť programovania. Taktiež som sa zúčastnil <b>Hackatonu v Košiciach</b>. Tieto súťaže mi dali <b>veľa skúseností</b>."
+        },
+        {
+            "institution": "Fakulta Informatiky a Informačných Technológií STU",
+            "startDate": "2023-09",
+            "endDate": null,
+            "location": "Bratislava",
+            "description": "Aktuálne budem študentom 3. ročníka FIIT STU v Bratislave. Táto škola ma núti neustále riešiť komplexné úlohy, učiť sa nové zaujímavé veci. Získal som praktické vedomosti v oblasti webového vývoja, umelej inteligencie, databázových systémov či sietí."
+        }
+    ],
+    "qualities":[
+        "Pracovitosť",  "Trpezlivosť", "Zodpovednosť", "Flexibilita", "Schopnosť riešiť problémy","Schopnosť učiť sa novým veciam", "Schopnosť pracovať v tíme"
+    ],
+    "languages":[ "Anglický jazyk - B2", "Ruský jazyk - A2"],
+    "WorkExperience": [
+
+        {
+            "position": "Práca v sklade",
+            "company": "Ploeger",
+            "startDate": "2023-06",
+            "endDate": "2023-08",
+            "location": "Harderwijk, Holandsko",
+            "description": "Po strednej škole som hľadal pracovné príležitosti a brigády na leto. Napriek tomu, že sa práca výrazne líšila od mojej študijnej oblasti, získal som skúsenosti, naučil sa zodpovednosti a zlepšil svoje organizačné schopnosti."
+        },
+                {
+            "position": "Tester",
+            "company": "ČSOB",
+            "startDate": "2024-03",
+            "endDate": null,
+            "location": "Bratislava",
+            "description": "Momentálne pracujem ako tester, kde sa zameriavam na <b>testovanie aplikácií</b>. <br><br>Táto práca mi umožnila získať praktické skúsenosti v programoch ako <b>Jira a Confluence</b>, tiež som sa naučil základy <b>testovania softvéru</b>. Táto práca ma naučila byť <b>tímový hráč</b>. Práca je už bližsie tomu, čomu sa chcem v budúcnosti venovať, no som presvedčený, že sa so svojimi vedemosťami a vlastnosťami viem posúnúť ďalej."
+        }
+    ],
+    "Projects": [
+        {
+        "name": "Tvorba webstránky www.protep.sk",
+        "description": "Vytvoril som webstránku pre môjho známeho, kde prezentuje svoje služby v oblasti upratovania a tepovania. Tento projekt mi dal základy potrebné pre tvorbu stránok. Naučil som sa základy <b>JavaScriptu</b>, ktorý ma zaujal. Následne som si <b>JavaScript</b> ako predmet zapísal a absolvoval som ho. Tu som sa taktiež naučil základy pre <b>React</b>. <a href=\"https://protep.sk/\" target=\"_blank\">www.protep.sk</a>"
+        },
+        {
+        "name": "Tvorba webstránky www.mosrzmedzilaborce.sk",
+        "description": "Toto bol projekt, kde som vytváral a redizajnoval stránku mestskej organizácie rybárskeho zväzu. Celá stránka bola písaná v <b>HTML/CSS</b> + <b>JavaScript</b>. Najtažšie bolo vymyslieť systém, ktorým sa budú na stránku pridávať dáta. Keďže databázy zdarma majú len malé úložisko, využil som <b>JSON súbory</b> ktoré sú na <b>Githube</b>. Stránka z nich berie dáta a následne vytvára elementy. Na generovanie takýchto JSONs som vytvoril samostatnú aplikáciu. <a href=\"https://mosrzmedzilaborce.sk//\" target=\"_blank\">www.mosrzmedzilaborce.sk</a>"
+        },
+        {
+        "name": "Projekt 3D šachov",
+        "description": "Spolupracujem na tvorbe <b>3D hry šach proti AI</b>. Ide o stránku na propagáciu vlastných šachových figúrok. Jedna z požiadaviek bola, aby sa hra s figúrkami dala vyskúšať na stránke. Na projekte sa stále pracuje, no šachová časť je takmer hotová. Dá sa vyskúšať na: <a href=\"https://richard190104.github.io/chess-website/\" target=\"_blank\">https://richard190104.github.io/chess-website/</a>.",
+        "github": "link na github: https://github.com/Richard190104/chess-website"
+        },
+        {
+        "name": "Aplikácia na trackovanie taskov",
+        "description": "Toto bol školský projekt v <b>2. ročníku</b>, na ktorom som spolupracoval so spolužiakom. Aplikácia obsahuje systém na <b>vytváranie tímov, projektov, taskov</b> a prideľovanie taskov na ďalších členov tímu. Je písaná v <b>React Native</b>, backend je riešený v <b>Pythone</b> a využíva lokálnu databázu <b>PostgreSQL</b>. Aplikácia obsahuje <b>tímový chat</b>, <b>podporu offline režimu</b>, má implementované <b>Firebase Crashlytics</b>, <b>Accessibility</b>, <b>Permission Handling</b> či <b>Push Notifikácie</b>.",
+        "github": "linky na github: frontend - https://github.com/Richard190104/MyApp backend - https://github.com/Richard190104/skuska-MTAA"
+        },
+        {
+        "name": "Hra monopoly",
+        "description": "Jeden zo školských projektov v <b>prvom ročníku</b>, bol vytvoriť ľubovoľný projekt v jazyku <b>Java</b>. Vybral som si tvorbu <b>hry Monopoly</b> s upravenými pravidlami. Naučil som sa základy <b>objektovo orientovaného programovania</b>, <b>návrhových vzorov</b> a lepšie som pochopil jazyk Java."
+        },
+        {
+        "name": "Chatovacia aplikácia",
+        "description": "Projekt na ktorom som pracoval na predmete <b>Počítačové a komunikačné siete</b>. Cieľom projektu bolo vytvoriť aplikáciu v <b>Pythone</b>, ktorá dokázala komunikovať na zvolenom ľubovoľnom porte v rámci jednej siete tak, aby komunikovala nad <b>UDP</b>. Bolo potrebné vytvoriť systém, ktorý robí UDP <b>spoľahlivejším protokolom</b> - teda <b>posielanie ACK, keep-alive správ</b>, vyriešiť a nasimulovať <b>výpadok spojenia počas prenosu dát</b>."
+        },
+        {
+        "name": "SQL zadania",
+        "description": "V <b>2. ročníku</b> som riešil niekoľko zadaní na zložitejšie <b>SQL query</b>, ktoré mi pomohli pochopiť jazyk <b>SQL</b>. Naučil som sa čo sú <b>window functions</b>, ako <b>optimalizovať dotazy</b> aby boli efektívnejšie, ako správne používať <b>indexy</b> a mnoho ďalších možností jazyka SQL."
+        },
+        {
+        "name": "Základy neurónových sietí",
+        "description": "Na predmete <b>Umelá inteligencia</b> som riešil rôzne typy zadaní, ktoré mi umožnili lepšie pochopiť <b>trénovanie a využitie umelej inteligencie</b>. Tieto zadania boli: <b>Algoritmus klasifikácie</b>, <b>Genetický algoritmus</b> a vytvorenie jednoduchej <b>neurónovej siete</b> na riešenie <b>XOR problému</b>."
+        },
+        {
+        "name": "Základy jazyka C",
+        "description": "V <b>prvom ročníku</b> som riešil niekoľko zadaní v jazyku <b>C</b> na získanie vedomostí o <b>správe pamäti</b>, <b>pointeroch</b>, práci s <b>dynamickou alokáciou</b>, <b>prácou so súbormi</b> a <b>základných algoritmoch</b>. Tieto úlohy mi pomohli pochopiť <b>nižšiu úroveň programovania</b> a lepšie porozumieť tomu, ako veci fungujú."
+        },
+        {
+        "name": "Dátové štruktúry a algoritmy",
+        "description": "Na predmete <b>DSA</b> som sa venoval implementácii základných <b>dátových štruktúr</b>, ako sú <b>zoznamy, zásobníky, fronty, stromy a grafy</b>. Okrem toho som riešil úlohy zamerané na <b>triedenie</b>, <b>vyhľadávanie</b> a <b>prácu s hešovacími tabuľkami</b>."
+        }
+        ],
+        "Certificates": [
+            {
+            "name": "ECDL",
+            "description": "Počas štúdia na gymnáziu som úspešne získal certifikát ECDL, ktorý potvrdzuje moju zručnosť v používaní programov Word, Excel, PowerPoint a Outlook."
+            },
+            {
+            "name": "CISCO - Introduction to Networks",
+            "description": "Kurz Cisco Introduction to Networks mi poskytol pevné základy v oblasti počítačových sietí, vrátane fungovania protokolov, smerovania a základov bezpečnosti."
+            }
+
+        ]
+
+
+}
