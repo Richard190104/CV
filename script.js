@@ -1,4 +1,25 @@
-const dataurl = 'content.json';
+var dataurl = 'content.json';
+
+const switchLanBtn = document.getElementById("lang-switcher")
+switchLanBtn.addEventListener("click", () => {
+    switchLanBtn.innerHTML = switchLanBtn.innerHTML === "SK" ? "EN" : "SK";
+    dataurl = dataurl === 'content.json' ? 'content-en.json' : 'content.json';
+    const main = document.querySelector('main');
+
+    main.innerHTML = '';
+
+    const left = document.createElement('div');
+    left.className = 'left-container';
+
+    const right = document.createElement('div');
+    right.className = 'right-container';
+
+    main.appendChild(left);
+    main.appendChild(right);
+    prepareData()
+updatePopupContent()
+})
+
 var pageInteractionHistory = []
 async function loadData() {
     return await fetch(dataurl)
@@ -7,6 +28,21 @@ async function loadData() {
             return data;
         })
 }
+
+var darkMode = false
+
+  const toggle = document.getElementById('darkModeToggle');
+  const isDark = localStorage.getItem('dark-mode') === 'true';
+
+  if (isDark) {
+    document.body.classList.add('dark-mode');
+    toggle.checked = true;
+  }
+
+  toggle.addEventListener('change', () => {
+    document.body.classList.toggle('dark-mode');
+    localStorage.setItem('dark-mode', document.body.classList.contains('dark-mode'));
+  });
 
 function createPopup(title, message, github = null) {
     const overlay = document.createElement('div');
@@ -57,7 +93,7 @@ function createCertificatesList(certificates) {
     container.classList.add('certificates-block');
 
     const header = document.createElement('h3');
-    header.textContent = 'Certifikáty';
+    header.textContent = dataurl === 'content.json' ? 'Certifikáty' : 'Certificates'
     header.style.marginBottom = '12px';
     container.appendChild(header);
 
@@ -90,7 +126,7 @@ function createProjectsList(projects) {
     container.classList.add('projects-block');
 
     const header = document.createElement('h3');
-    header.textContent = 'Projekty a zadania';
+    header.textContent = dataurl === 'content.json' ? 'Projekty a zadania' : 'My projects'
     header.style.marginBottom = '12px';
     container.appendChild(header);
 
@@ -144,7 +180,7 @@ function createQualitiesList(qualities, languages) {
     container.classList.add('qualities-block');
 
     const header1 = document.createElement('h3');
-    header1.textContent = 'Vlastnosti';
+    header1.textContent =  dataurl === 'content.json' ? 'Vlastnosti' : 'Personal qualities'
     header1.style.marginBottom = '12px';
     container.appendChild(header1);
 
@@ -161,7 +197,7 @@ function createQualitiesList(qualities, languages) {
     container.appendChild(qualitiesList);
 
     const header2 = document.createElement('h3');
-    header2.textContent = 'Jazykové znalosti';
+    header2.textContent = dataurl === 'content.json' ? 'Jazykové znalosti' : 'Languages'
     header2.style.margin = '24px 0 12px 0';
     container.appendChild(header2);
 
@@ -185,7 +221,7 @@ function createWorkExperienceList(workExperience) {
     container.classList.add('work-block');
 
     const header = document.createElement('h3');
-    header.textContent = 'Pracovné skúsenosti';
+    header.textContent = dataurl === 'content.json' ? 'Pracovné skúsenosti' : 'Professional Experience'
     header.style.marginBottom = '12px';
     container.appendChild(header);
 
@@ -237,7 +273,7 @@ function createEducationList(education) {
     container.classList.add('education-block');
 
     const header = document.createElement('h3');
-    header.textContent = 'Vzdelanie';
+    header.textContent = dataurl === 'content.json' ? 'Vzdelanie' : 'Education'
     header.style.marginBottom = '12px';
     container.appendChild(header);
 
@@ -335,6 +371,7 @@ function createBlock(content, title){
     return block;
 }
 
+async function prepareData(){
 loadData().then(data => {
     const leftContainer = document.querySelector('.left-container');
     const rightContainer = document.querySelector('.right-container');
@@ -345,17 +382,29 @@ loadData().then(data => {
         <h1>${data.name}</h1>
         <h2>${data.title}</h2>
     `;
+    if (dataurl === 'content.json') {
     leftContainer.innerHTML = `
-        <div class= "contact-container">
+        <div class="contact-container">
         <h3>Kontakt</h3>
         <p>Email: ${data.contact.email}</p>
         <p>Tel. číslo: ${data.contact.phone}</p>
         <p>Adresa: ${data.contact.address}</p>
         </div>
-       `;
+    `;
+    } else {
+    leftContainer.innerHTML = `
+        <div class="contact-container">
+        <h3>Contact</h3>
+        <p>Email: ${data.contact.email}</p>
+        <p>Phone number: ${data.contact.phone}</p>
+        <p>Address: ${data.contact.address}</p>
+        </div>
+    `;
+    }
 
-    rightContainer.appendChild(createBlock(data.Aboutme, 'O mne'));
-    leftContainer.appendChild(createList(data.skills, 'Zručnosti'));
+
+    rightContainer.appendChild(createBlock(data.Aboutme, dataurl === 'content.json' ? 'O mne' : 'About me'));
+    leftContainer.appendChild(createList(data.skills,  dataurl === 'content.json' ? 'Zručnosti' : 'Skills'));
     doubleContainer1.appendChild(createEducationList(data.education));
     rightContainer.appendChild(doubleContainer1)
     doubleContainer1.appendChild(createQualitiesList(data.qualities, data.languages))
@@ -381,20 +430,42 @@ clickableObjects.forEach((obj, index) => {
 }).catch(error => {
     console.error('Error loading data:', error);
 });
+} 
 
-window.addEventListener('DOMContentLoaded', () => {
-    const popup = document.createElement('div');
+prepareData()
+
+function updatePopupContent() {
+    if (document.querySelector(".popup-info ")){
+        document.querySelector(".popup-info ").remove()
+    }
+     const popup = document.createElement('div');
     popup.className = 'popup-info animate-popup-in';
-    popup.innerHTML = `
-        <span class="popup-close">&times;</span>
-        <p>👋 Niektoré prvky na tejto stránke sú <b>interaktívne</b>. Skús na ne kliknúť alebo prejsť myšou – napríklad na karty alebo zoznamy!</p>`;
+        popup.innerHTML = `
+            <span class="popup-close">&times;</span>
+            <p>👋 ${
+                dataurl === "content.json"
+                ? 'Niektoré prvky na tejto stránke sú <b>interaktívne</b>. Skúste na ne kliknúť alebo prejsť myšou – napríklad na karty alebo zoznamy!'
+                : 'Some elements on this page are <b>interactive</b>. Try clicking or hovering over them – for example, cards or lists!'
+            }</p>
+        `;
 
+        popup.querySelector('.popup-close').addEventListener('click', () => {
+            popup.remove();
+        });
     document.body.appendChild(popup);
 
-    popup.querySelector('.popup-close').addEventListener('click', () => {
-        popup.remove();
-    });
+    }
+
+window.addEventListener('DOMContentLoaded', () => {
+   
+    
+    
+
+    updatePopupContent();
+
+
 });
+
 window.pageLoadTime = Date.now();
 
 function sendVisitStart() {
