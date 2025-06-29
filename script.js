@@ -383,7 +383,7 @@ window.addEventListener('DOMContentLoaded', () => {
     popup.className = 'popup-info animate-popup-in';
     popup.innerHTML = `
         <span class="popup-close">&times;</span>
-        <p>👋 Niektoré prvky na tejto stránke sú <b>interaktívne</b>. Skús na ne kliknúť alebo prejsť myšou – napríklad na karty alebo zoznamy!</p>`;
+        <p>👋 Niektoré prvky na tejto stránke sú <b>interaktívne</b>. Skúste na ne kliknúť alebo prejsť myšou – napríklad na karty alebo zoznamy!</p>`;
 
     document.body.appendChild(popup);
 
