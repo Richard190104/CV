@@ -79,7 +79,11 @@ function createPopup(title, message, github = null) {
         link.href = extractFirstUrl(github);
         link.target = '_blank';
         link.rel = 'noopener noreferrer';
-        link.textContent = 'Pozrieť na GitHube';
+        if (dataurl === 'content.json') {
+            link.textContent = 'Pozrieť na GitHube';
+        } else {
+            link.textContent = 'View on GitHub';
+        }
         link.classList.add('github-link');
         popup.appendChild(link);
     }
@@ -152,7 +156,7 @@ function createProjectsList(projects) {
     github.classList.add("github-link");
 
     const linkLabel = document.createElement("span");
-    linkLabel.textContent = "Link na GitHub: ";
+    linkLabel.textContent = dataurl === "content.json" ? "Link na GitHub: " : "Link on GitHub:";
 
     const link = document.createElement("a");
     link.href = "https://github.com/Richard190104?tab=repositories";
