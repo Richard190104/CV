@@ -249,7 +249,7 @@ function createWorkExperienceList(workExperience) {
 
         const dates = document.createElement('div');
         const start = formatDate(exp.startDate);
-        const end = exp.endDate ? formatDate(exp.endDate) : 'súčasnosť';
+        const end = exp.endDate ? formatDate(exp.endDate) : dataurl === 'content.json' ? 'súčastnosť' : 'present';
         dates.textContent = `${start} – ${end}`;
         topRow.appendChild(dates);
 
