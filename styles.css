@@ -103,6 +103,7 @@ header h2 {
 .contact-container{
     display: flex;
     flex-direction: column;
+    width: 100%;
     border-bottom: 1px solid rgb(128, 128, 128)
 }
 
