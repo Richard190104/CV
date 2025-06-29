@@ -1,5 +1,5 @@
 const dataurl = 'content.json';
-
+var pageInteractionHistory = []
 async function loadData() {
     return await fetch(dataurl)
         .then(response => response.json())
@@ -73,6 +73,7 @@ function createCertificatesList(certificates) {
         item.appendChild(title);
 
         item.addEventListener("click", () => {
+            pageInteractionHistory.push(`Opened certificate ${cert.name}`)
             createPopup(cert.name, cert.description);
         });
 
@@ -105,6 +106,7 @@ function createProjectsList(projects) {
         item.appendChild(title);
 
         item.addEventListener("click", () => {
+            pageInteractionHistory.push(`Opened project ${project.name}`)
             createPopup(project.name, project.description, project.github || null)
         })
         item.classList.add("clickable")
@@ -216,6 +218,7 @@ function createWorkExperienceList(workExperience) {
         location.textContent = exp.location;
         item.classList.add("clickable")
         item.addEventListener("click", () => {
+            pageInteractionHistory.push(`Opened work ${exp.position}`)
             createPopup(exp.position +" - " + exp.company, exp.description)
         })
       
@@ -258,6 +261,7 @@ function createEducationList(education) {
         schoolItem.appendChild(location);
         schoolItem.classList.add("clickable")
         schoolItem.addEventListener("click", () => {
+            pageInteractionHistory.push(`Opened education ${item.institution}`)
             createPopup(item.institution, item.description )
         })
         container.appendChild(schoolItem);
@@ -383,7 +387,7 @@ window.addEventListener('DOMContentLoaded', () => {
     popup.className = 'popup-info animate-popup-in';
     popup.innerHTML = `
         <span class="popup-close">&times;</span>
-        <p>👋 Niektoré prvky na tejto stránke sú <b>interaktívne</b>. Skúste na ne kliknúť alebo prejsť myšou – napríklad na karty alebo zoznamy!</p>`;
+        <p>👋 Niektoré prvky na tejto stránke sú <b>interaktívne</b>. Skús na ne kliknúť alebo prejsť myšou – napríklad na karty alebo zoznamy!</p>`;
 
     document.body.appendChild(popup);
 
@@ -393,18 +397,20 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 
+function sendUserActivity() {
+    console.log(pageInteractionHistory)
+    const data = {
+        duration: Date.now() - window.pageLoadTime,
+        clicks: pageInteractionHistory
+    };
 
-window.addEventListener('load', () => {
-fetch('https://nodejs-serverless-function-express-wheat-kappa-81.vercel.app/api/hello')
-  .then(response => {
-    if (!response.ok) throw new Error('Chyba pri odosielaní emailu');
-    return response.text();
-  })
-  .then(data => {
-    console.log(); 
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
+    navigator.sendBeacon('https://nodejs-serverless-function-express-wheat-kappa-81.vercel.app/api/hello', JSON.stringify(data));
+    pageInteractionHistory = []
+}
 
+// odošli údaje keď tab odíde
+window.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'hidden') {
+        sendUserActivity();
+    }
 });
