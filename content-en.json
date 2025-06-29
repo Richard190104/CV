@@ -1,0 +1,123 @@
+{
+  "name": "Richard Pukáč",
+  "title": "Student at FIIT STU in Bratislava",
+  "contact": {
+    "email": "pukacrichard1@gmail.com",
+    "phone": "+421 907 545 190",
+    "address": "Vydraň 9, 06801 Medzilaborce",
+    "github": "link"
+  },
+  "Aboutme": "I am a computer science student at the <b>Faculty of Informatics and Information Technologies, STU</b> in Bratislava. <br><br> I've been programming for several years — I developed my skills mainly through personal projects, which allowed me to practically apply what I've learned. <br><br> I am actively looking for a part-time job that would help me grow professionally and contribute to developing meaningful solutions. I have no preference for a specific position — I’m interested in any work related to <b>software development</b>. I learn new technologies quickly and am highly motivated to expand my knowledge.",
+  "skills": [
+    {"HTML/CSS": 3.5},
+    {"JavaScript": 3},
+    {"Python": 3.5},
+    {"Java": 1.5},
+    {"C": 3},
+    {"SQL": 3.5},
+    {"React": 2},
+    {"React Native": 2},
+    {"Node.js": 2}
+  ],
+  "education": [
+    {
+      "institution": "Gymnázium Medzilaborce",
+      "startDate": "2019-09",
+      "endDate": "2021-01",
+      "location": "Medzilaborce",
+      "description": "After finishing elementary school I opted for the gymnasium there. That’s where I first became interested in programming and informatics. I began learning C#, and gradually encountered other languages."
+    },
+    {
+      "institution": "Gymnázium Pavla Horova",
+      "startDate": "2021-02",
+      "endDate": "2023-06",
+      "location": "Michalovce",
+      "description": "In my second year I transferred to this gymnasium in Michalovce — it offered better opportunities to develop in programming. I joined a class with an informatics focus and began learning new things. During my studies I participated in several programming contests (e.g., Zenit) and a Hackathon in Košice. These experiences taught me a lot."
+    },
+    {
+      "institution": "Faculty of Informatics and Information Technologies, STU",
+      "startDate": "2023-09",
+      "endDate": null,
+      "location": "Bratislava",
+      "description": "I am currently a 3rd‑year student at FIIT STU in Bratislava. The program constantly challenges me with complex tasks and drives me to learn new technologies. I’ve gained practical experience in web development, artificial intelligence, database systems, and networks."
+    }
+  ],
+  "qualities": [
+    "Hardworking", "Patience", "Responsibility", "Flexibility", "Problem-solving", "Quick learner", "Team player"
+  ],
+  "languages": [
+    "English – B2", "Russian – A2"
+  ],
+  "WorkExperience": [
+    {
+      "position": "Warehouse Worker",
+      "company": "Ploeger",
+      "startDate": "2023-06",
+      "endDate": "2023-08",
+      "location": "Harderwijk, Netherlands",
+      "description": "After high school, I looked for summer job opportunities. Although the work diverged from my field of study, I gained responsibility and organizational skills."
+    },
+    {
+      "position": "Tester",
+      "company": "ČSOB",
+      "startDate": "2024-03",
+      "endDate": null,
+      "location": "Bratislava",
+      "description": "I’m currently working as a tester, focusing on <b>application testing</b>. This job has given me practical experience with tools like <b>Jira and Confluence</b> and a solid foundation in software testing. I’ve also developed teamwork skills. While it's close to my future interests, I'm confident I can continue to grow with my skills and attributes."
+    }
+  ],
+  "Projects": [
+    {
+      "name": "Website creation for www.protep.sk",
+      "description": "I built a website for a friend to showcase their cleaning and upholstery services. This project gave me the fundamentals of web development. I learned JavaScript, which motivated me to choose it as a subject. I also began learning React. <a href=\"https://protep.sk/\" target=\"_blank\">www.protep.sk</a>"
+    },
+    {
+      "name": "Website revamp for www.mosrzmedzilaborce.sk",
+      "description": "This project involved creating and redesigning the local fishing association’s website using HTML/CSS + JavaScript. The challenge was to implement a data system. Since free databases had limited storage, I used <b>JSON files hosted on GitHub</b>. I also built a separate application to generate those JSONs."
+    },
+    {
+      "name": "3D Chess Project",
+      "description": "I'm collaborating on a <b>3D chess game with AI</b>. The site promotes custom chess pieces and includes an interactive game. It’s almost complete and playable: <a href=\"https://richard190104.github.io/chess-website/\" target=\"_blank\">richard190104.github.io/chess-website</a>",
+      "github": "GitHub: https://github.com/Richard190104/chess-website"
+    },
+    {
+      "name": "Task Tracking App",
+      "description": "A school project built in the 2nd year with a classmate. It features team/project/task creation and assignment. The app is in React Native, with a Python backend and local PostgreSQL database. It includes: team chat, offline mode, Firebase Crashlytics, accessibility, permissions, and push notifications.",
+      "github": "GitHub: frontend – https://github.com/Richard190104/MyApp, backend – https://github.com/Richard190104/skuska-MTAA"
+    },
+    {
+      "name": "Monopoly Game",
+      "description": "A first‑year Java school project. I developed a customized Monopoly game, learning object-oriented programming, design patterns, and deeper Java concepts."
+    },
+    {
+      "name": "Chat Application",
+      "description": "Built for a Computer and Communication Networks course. It’s a Python app that uses UDP over a local network, implementing ACKs, keep‑alive, and handling dropped packets."
+    },
+    {
+      "name": "SQL Assignments",
+      "description": "Completed several advanced <b>SQL queries</b> in my second year. These included window functions, query optimization, indexing, and more."
+    },
+    {
+      "name": "Fundamentals of Neural Networks",
+      "description": "For my AI course, I completed tasks that deepened my understanding of training and implementing neural networks: classification algorithms, genetic algorithms, and an XOR‑solving neural network."
+    },
+    {
+      "name": "C Language Fundamentals",
+      "description": "In my first year, I solved various C programming tasks involving memory management, pointers, dynamic allocation, file I/O, and basic algorithms. This helped me understand low-level programming concepts."
+    },
+    {
+      "name": "Data Structures and Algorithms",
+      "description": "In DSA, I implemented fundamental data structures—lists, stacks, queues, trees, graphs—and solved tasks related to sorting, searching, and hash tables."
+    }
+  ],
+  "Certificates": [
+    {
+      "name": "ECDL",
+      "description": "During high school, I earned the ECDL certificate, demonstrating proficiency in Word, Excel, PowerPoint, and Outlook."
+    },
+    {
+      "name": "CISCO - Introduction to Networks",
+      "description": "The Cisco Introduction to Networks course provided me with solid fundamentals in networking: protocols, routing, and network security basics."
+    }
+  ]
+}
