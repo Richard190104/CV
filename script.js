@@ -396,6 +396,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+window.pageLoadTime = Date.now();
 
 function sendUserActivity() {
     console.log(pageInteractionHistory)
