@@ -156,7 +156,7 @@ function createProjectsList(projects) {
     github.classList.add("github-link");
 
     const linkLabel = document.createElement("span");
-    linkLabel.textContent = dataurl === "content.json" ? "Link na GitHub: " : "Link on GitHub:";
+    linkLabel.textContent = dataurl === "content.json" ? "Link na GitHub: " : "Link on GitHub: ";
 
     const link = document.createElement("a");
     link.href = "https://github.com/Richard190104?tab=repositories";
