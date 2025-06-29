@@ -68,12 +68,12 @@
   ],
   "Projects": [
     {
-      "name": "Website creation for www.protep.sk",
+      "name": "Website - www.protep.sk",
       "description": "I built a website for a friend to showcase their cleaning and upholstery services. This project gave me the fundamentals of web development. I learned JavaScript, which motivated me to choose it as a subject. I also began learning React. <a href=\"https://protep.sk/\" target=\"_blank\">www.protep.sk</a>"
     },
     {
-      "name": "Website revamp for www.mosrzmedzilaborce.sk",
-      "description": "This project involved creating and redesigning the local fishing association’s website using HTML/CSS + JavaScript. The challenge was to implement a data system. Since free databases had limited storage, I used <b>JSON files hosted on GitHub</b>. I also built a separate application to generate those JSONs."
+      "name": "Website revamp of www.mosrzmedzilaborce.sk",
+      "description": "This project involved creating and redesigning the local fishing association’s website using HTML/CSS + JavaScript. The challenge was to implement a data system. Since free databases had limited storage, I used <b>JSON files hosted on GitHub</b>. I also built a separate application to generate those JSONs. <a href=\"https://mosrzmedzilaborce.sk//\" target=\"_blank\">www.mosrzmedzilaborce.sk</a>"
     },
     {
       "name": "3D Chess Project",
