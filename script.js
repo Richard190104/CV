@@ -478,8 +478,8 @@ function sendVisitStart() {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       startTime: new Date().toISOString(),
-      userAgent: navigator.userAgent,
-      referrer: document.referrer,
+      userAgent: "",
+      referrer: "",
       path: window.location.pathname
     }),
     keepalive: true,
