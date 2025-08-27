@@ -69,7 +69,7 @@
   "Projects": [
     {
       "name": "Website - www.cestakpoznaniu.sk",
-      "description": "I created a website for the civic association Cesta k poznaniu, which helps children with special needs. I also added an AI chatbot to the website that helps users access information. I built the chatbot using cosine similarity, which allows it to provide users with predefined answers."
+      "description": "I created a website for the civic association Cesta k poznaniu, which helps children with special needs. I also added an AI chatbot to the website that helps users access information. I built the chatbot using cosine similarity, which allows it to provide users with predefined answers. <a href=\"https://cestakpoznaniu.sk\" target=\"_blank\">https://cestakpoznaniu.sk</a>"
     },
     {
       "name": "Website - www.protep.sk",
