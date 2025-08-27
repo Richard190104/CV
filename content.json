@@ -67,6 +67,10 @@
         }
     ],
     "Projects": [
+         {
+        "name": "Tvorba webstránky www.cestakpoznaniu.sk",
+        "description": "Vytvoril som stránku pre občianské združenie cesta k poznaniu, ktoré pomáha deťom so špeciálnymi potrebami. Na stránku som pridal taktiež AI chatbota, ktorý pomáha použivateľom získať informácie. Chatbota som vytvoril pomocou cosine similarity, vďaka čomu dokáže používateľom odpovedať predpripravenými odpoveďami."
+        },
         {
         "name": "Tvorba webstránky www.protep.sk",
         "description": "Vytvoril som webstránku pre môjho známeho, kde prezentuje svoje služby v oblasti upratovania a tepovania. Tento projekt mi dal základy potrebné pre tvorbu stránok. Naučil som sa základy <b>JavaScriptu</b>, ktorý ma zaujal. Následne som si <b>JavaScript</b> ako predmet zapísal a absolvoval som ho. Tu som sa taktiež naučil základy pre <b>React</b>. Stranka je momentálne off, no dá sa pozrieť na: <a href=\"https://richard190104.github.io/Protep-2.0//\" target=\"_blank\">https://richard190104.github.io/Protep-2.0/</a>"
