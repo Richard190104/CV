@@ -69,7 +69,7 @@
     "Projects": [
          {
         "name": "Tvorba webstránky www.cestakpoznaniu.sk",
-        "description": "Vytvoril som stránku pre občianské združenie cesta k poznaniu, ktoré pomáha deťom so špeciálnymi potrebami. Na stránku som pridal taktiež AI chatbota, ktorý pomáha použivateľom získať informácie. Chatbota som vytvoril pomocou cosine similarity, vďaka čomu dokáže používateľom odpovedať predpripravenými odpoveďami."
+        "description": "Vytvoril som stránku pre občianské združenie cesta k poznaniu, ktoré pomáha deťom so špeciálnymi potrebami. Na stránku som pridal taktiež AI chatbota, ktorý pomáha použivateľom získať informácie. Chatbota som vytvoril pomocou cosine similarity, vďaka čomu dokáže používateľom odpovedať predpripravenými odpoveďami. <a href=\"https://cestakpoznaniu.sk\" target=\"_blank\">https://cestakpoznaniu.sk</a>"
         },
         {
         "name": "Tvorba webstránky www.protep.sk",
