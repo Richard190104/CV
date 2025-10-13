@@ -57,13 +57,21 @@
             "location": "Harderwijk, Holandsko",
             "description": "Po strednej škole som hľadal pracovné príležitosti a brigády na leto. Napriek tomu, že sa práca výrazne líšila od mojej študijnej oblasti, získal som skúsenosti, naučil sa zodpovednosti a zlepšil svoje organizačné schopnosti."
         },
-                {
+        {
             "position": "Tester",
             "company": "ČSOB",
             "startDate": "2024-03",
             "endDate": null,
             "location": "Bratislava",
-            "description": "Momentálne pracujem ako tester, kde sa zameriavam na <b>testovanie aplikácií</b>. <br><br>Táto práca mi umožnila získať praktické skúsenosti v programoch ako <b>Jira a Confluence</b>, tiež som sa naučil základy <b>testovania softvéru</b>. Táto práca ma naučila byť <b>tímový hráč</b>. Práca je už bližsie tomu, čomu sa chcem v budúcnosti venovať, no som presvedčený, že sa so svojimi vedemosťami a vlastnosťami viem posúnúť ďalej."
+            "description": "Počas tejto práce som sa zameriaval na <b>testovanie aplikácií</b>. <br><br>Táto práca mi umožnila získať praktické skúsenosti v programoch ako <b>Jira a Confluence</b>, tiež som sa naučil základy <b>testovania softvéru</b>. Táto práca ma naučila byť <b>tímový hráč</b>. Práca je už bližsie tomu, čomu sa chcem v budúcnosti venovať, no som presvedčený, že sa so svojimi vedomosťami a vlastnosťami viem posunúť ďalej."
+        },
+         {
+            "position": "SQL Developer",
+            "company": "Data system soft",
+            "startDate": "2025-09",
+            "endDate": null,
+            "location": "Bratislava",
+            "description": "Aktuálne pracujem ako SQL Developer pre spoločnosť Data system soft. Moja práca zahŕňa prácu s databázou, vyhľadávanie informácií v nej. "
         }
     ],
     "Projects": [
