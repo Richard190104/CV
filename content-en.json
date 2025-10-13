@@ -61,9 +61,17 @@
       "position": "Tester",
       "company": "ČSOB",
       "startDate": "2024-03",
+      "endDate": "2025-09",
+      "location": "Bratislava",
+      "description": "I was working as a tester, focusing on <b>application testing</b>. This job has given me practical experience with tools like <b>Jira and Confluence</b> and a solid foundation in software testing. I’ve also developed teamwork skills. While it's close to my future interests, I'm confident I can continue to grow with my skills and attributes."
+    },
+    {
+      "position": "SQL Developer",
+      "company": "Data system soft",
+      "startDate": "2025-09",
       "endDate": null,
       "location": "Bratislava",
-      "description": "I’m currently working as a tester, focusing on <b>application testing</b>. This job has given me practical experience with tools like <b>Jira and Confluence</b> and a solid foundation in software testing. I’ve also developed teamwork skills. While it's close to my future interests, I'm confident I can continue to grow with my skills and attributes."
+      "description": "I am currently working as an SQL Developer at Data system soft. My responsibilities include working with databases and searching for information within them."
     }
   ],
   "Projects": [
