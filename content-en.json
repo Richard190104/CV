@@ -84,10 +84,6 @@
       "description": "I built a website for a friend to showcase their cleaning and upholstery services. This project gave me the fundamentals of web development. I learned JavaScript, which motivated me to choose it as a subject. I also began learning React. Website is currently off, but you can check it out at: <a href=\"https://richard190104.github.io/Protep-2.0//\" target=\"_blank\">https://richard190104.github.io/Protep-2.0/</a>"
     },
     {
-      "name": "Website revamp of www.mosrzmedzilaborce.sk",
-      "description": "This project involved creating and redesigning the local fishing association’s website using HTML/CSS + JavaScript. The challenge was to implement a data system. Since free databases had limited storage, I used <b>JSON files hosted on GitHub</b>. I also built a separate application to generate those JSONs. <a href=\"https://mosrzmedzilaborce.sk//\" target=\"_blank\">www.mosrzmedzilaborce.sk</a>"
-    },
-    {
       "name": "3D Chess Project",
       "description": "I'm collaborating on a <b>3D chess game with AI</b>. The site promotes custom chess pieces and includes an interactive game. It’s almost complete and playable: <a href=\"https://richard190104.github.io/chess-website/\" target=\"_blank\">richard190104.github.io/chess-website</a>",
       "github": "GitHub: https://github.com/Richard190104/chess-website"
