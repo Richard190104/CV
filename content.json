@@ -84,10 +84,6 @@
         "description": "Vytvoril som webstránku pre môjho známeho, kde prezentuje svoje služby v oblasti upratovania a tepovania. Tento projekt mi dal základy potrebné pre tvorbu stránok. Naučil som sa základy <b>JavaScriptu</b>, ktorý ma zaujal. Následne som si <b>JavaScript</b> ako predmet zapísal a absolvoval som ho. Tu som sa taktiež naučil základy pre <b>React</b>. Stranka je momentálne off, no dá sa pozrieť na: <a href=\"https://richard190104.github.io/Protep-2.0//\" target=\"_blank\">https://richard190104.github.io/Protep-2.0/</a>"
         },
         {
-        "name": "Tvorba webstránky www.mosrzmedzilaborce.sk",
-        "description": "Toto bol projekt, kde som vytváral a redizajnoval stránku mestskej organizácie rybárskeho zväzu. Celá stránka bola písaná v <b>HTML/CSS</b> + <b>JavaScript</b>. Najtažšie bolo vymyslieť systém, ktorým sa budú na stránku pridávať dáta. Keďže databázy zdarma majú len malé úložisko, využil som <b>JSON súbory</b> ktoré sú na <b>Githube</b>. Stránka z nich berie dáta a následne vytvára elementy. Na generovanie takýchto JSONs som vytvoril samostatnú aplikáciu. <a href=\"https://mosrzmedzilaborce.sk//\" target=\"_blank\">www.mosrzmedzilaborce.sk</a>"
-        },
-        {
         "name": "Projekt 3D šachov",
         "description": "Spolupracujem na tvorbe <b>3D hry šach proti AI</b>. Ide o stránku na propagáciu vlastných šachových figúrok. Jedna z požiadaviek bola, aby sa hra s figúrkami dala vyskúšať na stránke. Na projekte sa stále pracuje, no šachová časť je takmer hotová. Dá sa vyskúšať na: <a href=\"https://richard190104.github.io/chess-website/\" target=\"_blank\">https://richard190104.github.io/chess-website/</a>.",
         "github": "link na github: https://github.com/Richard190104/chess-website"
