@@ -77,6 +77,10 @@
   ],
   "Projects": [
     {
+      "name": "Registration System Development",
+      "description": "A project for a psychology student’s bachelor thesis who needed a <b>participant registration system</b>. I created the system as a website that allows participants to register for time slots. The system sends registration confirmations and reminders 2 days before the selected date. For the frontend, I used <b>Quasar</b>, and for the backend, <b>Node.js</b> hosted via Vercel. I used Supabase hosting, which provides a PostgreSQL database. I also created an admin access where it is possible to create user accounts and list available dates."
+    },
+    {
       "name": "Website - www.cestakpoznaniu.sk",
       "description": "I created a website for the civic association Cesta k poznaniu, which helps children with special needs. I also added an AI chatbot to the website that helps users access information. I built the chatbot using cosine similarity, which allows it to provide users with predefined answers. <a href=\"https://cestakpoznaniu.sk\" target=\"_blank\">https://cestakpoznaniu.sk</a>"
     },

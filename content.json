@@ -11,13 +11,14 @@
     "skills": [
         {"HTML/CSS": 3.5},
         {"JavaScript": 3},
+        {"TypeScript": 2.5},
         {"Python": 3.5},
         {"Java": 1.5},
         {"C": 3},
-        {"SQL": 3.5},
+        {"SQL": 3},
         {"React": 2},
         {"React native": 2},
-        {"Node.js": 2},
+        {"Node.js": 2.5},
         {"Quasar": 2.5}        
 
     ],
@@ -76,6 +77,10 @@
         }
     ],
     "Projects": [
+        {
+            "name":"Tvorba registračného systému",
+            "description": "Projekt pre bakalársku prácu študenta psychológie, ktorý potreboval systém na <b>registráciu účastníkov</b>. Vytvoril som systém formou webovej stránky, ktorá umožnuje účastníkom zaregistrovať si termín. Systém odošle potrvdenia o registráciách a pripomienky 2 dni pred vybraným termínom. Na frontende som použil <b>Quasar</b> a na backend <b>Node.js</b> hostovaný cez vercel. Ako databázu som využil hosting supabase, ktorý poskytuje postgreSQL databázu. Taktiež som vytvoril admin prístup kde je možne vytvárat používateĺom kontá a vypisovať možné termíny."
+        },
          {
         "name": "Tvorba webstránky www.cestakpoznaniu.sk",
         "description": "Vytvoril som stránku pre občianské združenie cesta k poznaniu, ktoré pomáha deťom so špeciálnymi potrebami. Na stránku som pridal taktiež AI chatbota, ktorý pomáha použivateľom získať informácie. Chatbota som vytvoril pomocou cosine similarity, vďaka čomu dokáže používateľom odpovedať predpripravenými odpoveďami. <a href=\"https://cestakpoznaniu.sk\" target=\"_blank\">https://cestakpoznaniu.sk</a>"
