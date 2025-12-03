@@ -498,27 +498,27 @@ function prepareExport() {
 window.pageLoadTime = Date.now();
 
 function sendVisitStart() {
-//   fetch('https://nodejs-serverless-function-express-wheat-kappa-81.vercel.app/api/visit-start', {
-//     method: 'POST',
-//     headers: { 'Content-Type': 'application/json' },
-//     body: JSON.stringify({
-//       startTime: new Date().toISOString(),
-//       userAgent: "",
-//       referrer: "",
-//       path: window.location.pathname
-//     }),
-//     keepalive: true,
-//   });
+  fetch('https://nodejs-serverless-function-express-wheat-kappa-81.vercel.app/api/visit-start', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      startTime: new Date().toISOString(),
+      userAgent: "",
+      referrer: "",
+      path: window.location.pathname
+    }),
+    keepalive: true,
+  });
 }
 
 function sendUserActivity() {
-    // const data = {
-    //     duration: Date.now() - window.pageLoadTime,
-    //     clicks: pageInteractionHistory
-    // };
+    const data = {
+        duration: Date.now() - window.pageLoadTime,
+        clicks: pageInteractionHistory
+    };
 
-    // navigator.sendBeacon('https://nodejs-serverless-function-express-wheat-kappa-81.vercel.app/api/hello', JSON.stringify(data));
-    // pageInteractionHistory = []
+    navigator.sendBeacon('https://nodejs-serverless-function-express-wheat-kappa-81.vercel.app/api/hello', JSON.stringify(data));
+    pageInteractionHistory = []
 }
 
 window.addEventListener('DOMContentLoaded', sendVisitStart);
