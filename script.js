@@ -481,7 +481,7 @@ function prepareExport() {
         pageInteractionHistory.push("Exported CV to PDF in" + (dataurl === 'content.json' ? " Slovak" : " English"))
         const popup = document.querySelector('.popup-info ');
         settingsDiv.style.display = "none";
-        popup.style.display = "none";
+        if (popup)popup.style.display = "none";
         main.classList.add("widenMain")
         exportBtn.style.display = "none";
         window.print();
@@ -489,7 +489,7 @@ function prepareExport() {
             main.classList.remove("widenMain")
             settingsDiv.style.display = "flex";
             exportBtn.style.display = "block";
-            popup.style.display = "block";
+            if (popup)popup.style.display = "block";
         }, 10);
     });
 }
