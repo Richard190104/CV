@@ -511,20 +511,6 @@ function sendVisitStart() {
   });
 }
 
-function sendUserActivity() {
-    const data = {
-        duration: Date.now() - window.pageLoadTime,
-        clicks: pageInteractionHistory
-    };
 
-    navigator.sendBeacon('https://nodejs-serverless-function-express-wheat-kappa-81.vercel.app/api/hello', JSON.stringify(data));
-    pageInteractionHistory = []
-}
 
 window.addEventListener('DOMContentLoaded', sendVisitStart);
-
-window.addEventListener('visibilitychange', () => {
-  if (document.visibilityState === 'hidden') {
-    sendUserActivity();
-  }
-});
